@@ -113,7 +113,7 @@ namespace knockknock.readify.net
         {
             if (n < min || n > max)
             {
-                return -1;
+                throw new OverflowException("Fib(>92) will cause a 64-bit integer overflow");
             }
 
             var idx = Math.Abs(n);
